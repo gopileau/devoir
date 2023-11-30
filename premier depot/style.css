@@ -1,51 +1,61 @@
-body {
-    font-family: 'Lato', sans-serif;
+*{
     font-family: 'Raleway', sans-serif;
-    margin: 2em;
-    margin: 300px;
-    padding:10px;
-    background-position: center;
-    max-width: 1160px;
-    height: 0 auto;
-    border-right: #333;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-    grid-column: 1/span 3;
-    gap:10px;
-    background-size: auto;
-    background-color: #782221;
+    margin: 10px;
+    padding:10px;  
 }
-
 h1,h2,h3,h4{
     font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+em{
+    text-indent: 5em;
+}
+body {
+    border-right: #333;
+    background-size: auto;
+    background-color:#782221;
+}
+#flex-row{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.container{
+    display:flex;
+    flex-basis: 1600px;
+    justify-content:center;
+}
+main{
+    width: 600px;
+    color: white;
+}
+aside{
+    margin: 0px 2em auto;
+    width: 900px;
+    background-color: white;
+    margin-block-start: -60px; 
+    writing-mode: horizontal-tb;
+
+}
+nav{
+    background-color: #2c1d27;
+    color: white;
+    display:flex;
+    justify-content: space-between;
 }
 img{
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 50%;
     align-items: center;
-    box-shadow:10px 10px 30px #dbc2a4
+    box-shadow:10px 10px 10px #dbc2a4
 }
+
 a{
     text-decoration: none;
     color: white;
-}
-header{
-    grid-area: header;
-    width: 960px;
-}
-main{
-   grid-area: main;
-}
-p{
-    text-indent: 5em;
-}
-section{
-    background-color: white;
 }
 h3{
     color: #2c1d27;
@@ -53,15 +63,8 @@ h3{
 }
 h4{
     color: #2c1d27;
-    background-color: #dbc2a4;
-    margin-bottom: 20px;
-}
-
-address{
-    background-color: #2c1d27;
-    color: #dbc2a4;
-    display:flex;
-    justify-content: space-between;
+    background: linear-gradient(to left,#dbc2a4 95%,#782221 5px);
+    padding-left: 2em;
 }
 
 h1 {
@@ -87,13 +90,17 @@ li {
     margin-bottom: 10px;
 }
 footer{
-    grid-area: footer;
     display: flex;
     flex-direction: row-reverse;
+    border-radius: 1em;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
 }
-time{
-    text-align: center;
+span{
     color: white;
+    display: flex;
+    justify-content: center;
 }
+strong{    
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;}
